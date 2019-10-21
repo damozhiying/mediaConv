@@ -35,17 +35,21 @@
 |transcoding_state_info |string |转码状态信息                         |
 
 ###### 接口示例
-http://host:port/v1/transcodings?output_url=cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xpdmV0di9odW5hbnR2
+http://host:port/v1/transcodings?output_url=cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xpdmV0di9odW5hbnR2XzUwMGs
 
-"cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xpdmV0di9odW5hbnR2" 为"rtmp://58.200.131.2:1935/livetv/hunantv"的 urlbase64编码
+"cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xpdmV0di9odW5hbnR2XzUwMGs" 为"rtmp://58.200.131.2:1935/livetv/hunantv_500k"的 urlbase64编码
 
 
 ###### 返回
 - Body
 ```
 {
-  "code": 200,
-  "data": "730781",
-  "message": "OK"
+  "status": 0,
+  "transcoding_input_url": "rtmp://58.200.131.2:1935/livetv/hunantv",
+  "transcoding_output_url": "rtmp://58.200.131.2:1935/livetv/hunantv_500k"
+  "transcoding_params": "/vb/500k/s/640x360"
+  "transcoding_start_time":
+  "transcoding_last_active_time"
+  "transcoding_state_info"
 }
 ```
