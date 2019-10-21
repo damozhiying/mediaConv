@@ -49,7 +49,7 @@ http://host:port/v1/transcodings?output_url=cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xp
   "transcoding_output_url": "rtmp://58.200.131.2:1935/livetv/hunantv_500k"
   "transcoding_params": "/vb/500k/s/640x360"
   "transcoding_start_time":
-  "transcoding_last_active_time"
-  "transcoding_state_info"
+  "transcoding_last_active_time":
+  "transcoding_state_info":
 }
 ```
