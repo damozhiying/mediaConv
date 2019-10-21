@@ -41,9 +41,11 @@ http://host:port/v1/transcodings?output_url=cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xp
 
 
 ###### 返回
-···
+- Body
+```
 {
-    status:0
-    transcoding_input_url:rtmp://58.200.131.2:1935/livetv/hunantv
+  "code": 200,
+  "data": "730781",
+  "message": "OK"
 }
-···
+```
