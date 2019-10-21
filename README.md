@@ -20,13 +20,14 @@
 >
 | 参数 | 必选 | 类型 | 说明 |
 |:-----  |:-------|:-----|-----|
-|output_url  |false|string|转码输出URL|
+|output_url  |false|string|转码输出URL,不带该参数表示查询所有转码实例|
 
 ###### 返回字段
 > 
 |返回字段|字段类型|说明                              |
 |:-----   |:------|:-----------------------------   |
 |status   |int    |返回结果状态。0：正常；1：错误。   |
+|transcoding_count   |int    |符合条件的转码实例个数   |
 |transcoding_input_url  |string |转码输入URL                      |
 |transcoding_output_url  |string |转码输出URL                      |
 |transcoding_params  |string |转码参数                      |
