@@ -31,7 +31,7 @@
 |transcoding_output_url  |string |转码输出URL                      |
 |transcoding_params  |string |转码参数                      |
 |transcoding_start_time |string |转码开始时间                         |
-|transcoding_last_active_time |string |转码最近坚持时间                         |
+|transcoding_last_active_time |string |转码最近状态检查时间                         |
 |transcoding_state_info |string |转码状态信息                         |
 
 ###### 接口示例
