@@ -8,4 +8,4 @@
 ###### 接口功能
 > 查询转码实例信息
 ###### URL
-> http://host:port/transcoding
+> /v1/transcoding
