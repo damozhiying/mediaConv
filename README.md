@@ -35,5 +35,8 @@
 |transcoding_state_info |string |转码状态信息                         |
 
 ###### 接口示例
-http://host:port/v1/transcodings?output_url=cnRtcDovLzE5Mi4xNjguMTAwLjMwL3ZjaGFubmVscy9saXZlX3N0cmVhbTE
+http://host:port/v1/transcodings?output_url=cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xpdmV0di9odW5hbnR2
+
+cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xpdmV0di9odW5hbnR2 为rtmp://58.200.131.2:1935/livetv/hunantv的 urlbase64编码
+
 ————————————————
