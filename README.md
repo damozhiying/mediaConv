@@ -26,8 +26,10 @@
 > 
 |返回字段|字段类型|说明                              |
 |:-----   |:------|:-----------------------------   |
-|status   |int    |返回结果状态。0：正常；1：错误。   |
+|code   |int    |返回结果状态码   |
+|message  |string    |结果状态描述信息   |
 |transcoding_count   |int    |符合条件的转码实例个数   |
+|transcoding_array   |    |符合条件的转码实例数组   |
 |transcoding_input_url  |string |转码输入URL                      |
 |transcoding_output_url  |string |转码输出URL                      |
 |transcoding_params  |string |转码参数                      |
@@ -45,7 +47,9 @@ http://host:port/v1/transcodings?output_url=cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xp
 - Body
 ```
 {
-  "status": 0,
+  "code": 200,
+  "message": "Success",
+  "transcoding_count": 1,
   "transcoding_input_url": "rtmp://58.200.131.2:1935/livetv/hunantv",
   "transcoding_output_url": "rtmp://58.200.131.2:1935/livetv/hunantv_500k"
   "transcoding_params": "/vb/500k/s/640x360"
