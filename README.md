@@ -39,8 +39,10 @@ http://host:port/v1/transcodings?output_url=cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xp
 
 "cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xpdmV0di9odW5hbnR2" 为"rtmp://58.200.131.2:1935/livetv/hunantv"的 urlbase64编码
 
-###### Response
+返回
+···
 {
     status:0
     transcoding_input_url:rtmp://58.200.131.2:1935/livetv/hunantv
-————————————————
+}
+···
