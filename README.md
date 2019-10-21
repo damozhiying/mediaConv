@@ -17,6 +17,7 @@
 > GET
 
 ###### 请求参数
+>
 | 参数 | 必选 | 类型 | 说明 |
 |:-----  |:-------|:-----|-----|
-|output_url  |false|string|输出URL|
+|output_url  |false|string|转码输出URL|
