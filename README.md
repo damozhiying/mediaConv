@@ -5,24 +5,13 @@
 接口API规范
 ---
 **1\. 查询转码实例**
-###### 接口功能
+#### 接口功能
 > 查询转码实例信息
-###### URL
-> /v1/transcodings
-
-###### 支持格式
-> JSON
-
-###### HTTP请求方式
-> GET
-
-###### 请求参数
->
+#### 请求参数
 | 参数 | 必选 | 类型 | 说明 |
 |:-----  |:-------|:-----|-----|
 |output_url  |false|string|转码输出URL,不带该参数表示查询所有转码实例|
-
-###### 返回字段
+#### 返回字段
 > 
 |返回字段|字段类型|说明                              |
 |:-----   |:------|:-----------------------------   |
@@ -37,13 +26,20 @@
 |transcoding_last_active_time |string |转码最近状态检查时间                         |
 |transcoding_state_info |string |转码状态信息                         |
 
-###### 接口示例
-http://host:port/v1/transcodings?output_url=cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xpdmV0di9odW5hbnR2XzUwMGs
 
-"cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xpdmV0di9odW5hbnR2XzUwMGs" 为"rtmp://58.200.131.2:1935/livetv/hunantv_500k"的 urlbase64编码
+#### Request
+
+- Method: **Get**
+- URL: ```/v1/transcodings?output_url={urlBase64(output_url)}```
+  - 查询特定的转码实例:```/v1/transcodings?output_url=cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xpdmV0di9odW5hbnR2XzUwMGs```
+  - 查询特定的所有转码实例:```/v1/transcodings```  
+- Header:
+- Body:
+```
+```
+#### Response
 
 
-###### 返回
 - Body
 ```
 {
@@ -62,4 +58,7 @@ http://host:port/v1/transcodings?output_url=cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xp
     }
   ]
 }
+```
+
+```
 ```
