@@ -50,11 +50,16 @@ http://host:port/v1/transcodings?output_url=cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xp
   "code": 200,
   "message": "Success",
   "transcoding_count": 1,
-  "transcoding_input_url": "rtmp://58.200.131.2:1935/livetv/hunantv",
-  "transcoding_output_url": "rtmp://58.200.131.2:1935/livetv/hunantv_500k"
-  "transcoding_params": "/vb/500k/s/640x360"
-  "transcoding_start_time":
-  "transcoding_last_active_time":
-  "transcoding_state_info":
+  transcodings_array": [
+    {
+      "transcoding_input_url": "rtmp://58.200.131.2:1935/livetv/hunantv",
+      "transcoding_output_url": "rtmp://58.200.131.2:1935/livetv/hunantv_500k",
+      "transcoding_params": "/vb/500k/s/640x360",
+      "transcoding_start_time": "2019-10-22 09:13:18.502538 +0800 CST m=+135.682582454",
+      "transcoding_last_active_time": "2019-10-22 09:15:43.577268 +0800 CST m=+280.762973568"
+      "transcoding_state_info": "frame= 2045 fps= 15 q=20.0 size=   16203kB time=00:02:14.20 bitrate= 989.1kbits/s         
+                                speed=0.984x    \r"
+    }
+  ]
 }
 ```
