@@ -60,5 +60,39 @@
 }
 ```
 
+**1\. 创建转码实例**
+#### 接口功能
+> 创建转码实例
+#### 请求参数
+#### 返回字段
+> 
+|返回字段|字段类型|说明                              |
+|:-----   |:------|:-----------------------------   |
+|code   |int    |返回结果状态码   |
+|message  |string    |结果状态描述信息   |
+
+#### Request
+
+- Method: **Post**
+- URL: ```/v1/transcodings```
+- Header: Content-Type:application/json
+- Body:
+```
+{
+  input_url: "rtmp:/58.200.131.2:1935/livetv/hunantv",
+  output_url: "rtmp://58.200.131.2:1935/livetv/hunantv_500k",
+  conv_params: /vb/500k
+}
+```
+#### Response
+
+
+- Body
+```
+{
+  "code": 200,
+  "message": "rtmp:/58.200.131.2:1935/livetv/hunantv Transcoding in Prepare"
+}
+```
 ```
 ```
