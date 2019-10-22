@@ -50,7 +50,7 @@ http://host:port/v1/transcodings?output_url=cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xp
   "code": 200,
   "message": "Success",
   "transcoding_count": 1,
-  transcodings_array": [
+  "transcodings_array": [
     {
       "transcoding_input_url": "rtmp://58.200.131.2:1935/livetv/hunantv",
       "transcoding_output_url": "rtmp://58.200.131.2:1935/livetv/hunantv_500k",
