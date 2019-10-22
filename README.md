@@ -99,7 +99,6 @@
 #### 接口功能
 > 删除转码实例
 #### 请求参数
-#### 请求参数
 | 参数 | 必选 | 类型 | 说明 |
 |:-----  |:-------|:-----|-----|
 |output_url  |true|string|转码输出URL的urlbase64值|
@@ -114,6 +113,7 @@
 
 - Method: **DEL**
 - URL: ```/v1/transcodings```
+  - 查询特定的转码实例:```/v1/transcodings?output_url=cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xpdmV0di9odW5hbnR2XzUwMGs```
 - Header: 
 - Body:
 
