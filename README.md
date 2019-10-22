@@ -60,7 +60,7 @@
 }
 ```
 
-**1\. 创建转码实例**
+**2\. 创建转码实例**
 #### 接口功能
 > 创建转码实例
 #### 请求参数
@@ -91,7 +91,7 @@
 ```
 {
   "code": 200,
-  "message": "rtmp:/58.200.131.2:1935/livetv/hunantv Transcoding in Prepare"
+  "message": "rtmp:/58.200.131.2:1935/livetv/hunantv Transcoding in Preparing"
 }
 ```
 ```
