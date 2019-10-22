@@ -29,7 +29,7 @@
 
 #### Request
 
-- Method: **Get**
+- Method: **GET**
 - URL: ```/v1/transcodings?output_url={urlBase64(output_url)}```
   - 查询特定的转码实例:```/v1/transcodings?output_url=cnRtcDovLzU4LjIwMC4xMzEuMjoxOTM1L2xpdmV0di9odW5hbnR2XzUwMGs```
   - 查询特定的所有转码实例:```/v1/transcodings```  
@@ -73,7 +73,7 @@
 
 #### Request
 
-- Method: **Post**
+- Method: **POST**
 - URL: ```/v1/transcodings```
 - Header: Content-Type:application/json
 - Body:
@@ -92,6 +92,38 @@
 {
   "code": 200,
   "message": "rtmp:/58.200.131.2:1935/livetv/hunantv Transcoding in Preparing"
+}
+```
+
+**3\. 删除转码实例**
+#### 接口功能
+> 删除转码实例
+#### 请求参数
+#### 请求参数
+| 参数 | 必选 | 类型 | 说明 |
+|:-----  |:-------|:-----|-----|
+|output_url  |true|string|转码输出URL的urlbase64值|
+#### 返回字段
+> 
+|返回字段|字段类型|说明                              |
+|:-----   |:------|:-----------------------------   |
+|code   |int    |返回结果状态码   |
+|message  |string    |结果状态描述信息   |
+
+#### Request
+
+- Method: **DEL**
+- URL: ```/v1/transcodings```
+- Header: 
+- Body:
+
+#### Response
+
+- Body
+```
+{
+  "code": 200,
+  "message": "rtmp:/58.200.131.2:1935/livetv/hunantv_500k Transcoding in Closing"
 }
 ```
 ```
